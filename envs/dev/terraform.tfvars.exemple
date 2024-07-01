@@ -1,0 +1,18 @@
+credentials_file_path = "/path/to/your/credentials.json"
+project_id            = ""
+region                = ""
+network_name          = ""
+subnetworks = [
+  {
+    name                     = "subnet-a"
+    ip_cidr_range            = "10.0.1.0/24"
+    region                   = "us-central1"
+    private_ip_google_access = true
+  },
+  {
+    name                     = "subnet-b"
+    ip_cidr_range            = "10.0.2.0/24"
+    region                   = "us-central1"
+    private_ip_google_access = false
+  }
+]
