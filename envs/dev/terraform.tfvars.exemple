@@ -1,4 +1,4 @@
-credentials_file_path = "/path/to/your/credentials.json"
+credentials_file_path = "path/to/json"
 project_id            = ""
 region                = ""
 network_name          = ""
@@ -16,3 +16,19 @@ subnetworks = [
     private_ip_google_access = false
   }
 ]
+
+##GKE
+
+cluster_name         = ""
+location_of_cluster  = "us-central1"
+node_machine_type    = "e2-medium"
+initial_node_count   = 1
+subnetwork_name      = "subnet-a"
+
+## IAM
+
+gke_admin_members  = [
+  "service-account@[project_id].iam.gserviceaccount.com",
+  "user:your-email"
+]
+
